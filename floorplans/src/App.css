@@ -1,0 +1,123 @@
+*, body, html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 2em;
+  color: rgba(0,0,0,0.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global */
+
+#navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background: #ffffff;
+  padding: 20px;
+}
+
+#navigation #logo h1 {
+  font-size: 1.5em;
+  display: block;
+}
+
+#navigation #logo h1 span {
+  font-size: 1em;
+  font-weight: 900;
+  display: block;
+}
+
+.navbar input {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: rgba(0,0,0,0.05);
+  color: rgba(0,0,0,0.5);
+  border: none;
+  font-size: 0.9em;
+  padding: 10px 20px;
+}
+
+/* Homepage */
+
+#homepageContainer {
+  margin-left: 240px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+#homepageContainer.page-transition-done, #homepageContainer.page-transition-enter-done {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+/* Interior Pages */
+
+#interiorContainer {
+  position: relative;
+  opacity: 0;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#interiorContainer.page-transition-done, #interiorContainer.page-transition-enter-done {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+#interiorLeft {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  background-size: cover!important;
+  -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  -o-background-size: cover!important;
+}
+
+#interiorRight {
+  float: right;
+  width: 65%;
+  padding: 100px 50px;
+}
+
+#interiorContent h1 {
+  margin-bottom: 40px;
+}
